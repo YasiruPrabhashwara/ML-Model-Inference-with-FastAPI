@@ -22,7 +22,7 @@ class PredictionOutput(BaseModel):
 
 @app.get("/")
 def plant_check():
-    return {"status": "healthy", "message": "ML Model API is running"}
+    return {"status": "Flower_Type", "message": "ML Model API is running"}
 
 @app.post("/predict", response_model=PredictionOutput)
 
